@@ -1,0 +1,85 @@
+parserOptions:
+  ecmaVersion: 6
+  sourceType: 'module'
+  ecmaFeatures:
+    jsx: true
+    modules: true
+rules:
+  comma-dangle:
+    - 2
+    - "always-multiline"
+  indent:
+    - 2
+    - 2
+  quotes:
+    - 2
+    - single
+  linebreak-style:
+    - 2
+    - unix
+  semi:
+    - 2
+    - always
+  block-scoped-var: 2
+  default-case: 2
+  eqeqeq: 2
+  no-multi-spaces:
+    - 2
+    - exceptions:
+        Property: true
+        VariableDeclarator: true
+        ImportDeclaration: true
+  no-warning-comments:
+    - 1
+    -
+      terms:
+        - "todo"
+        - "fixme"
+      location: "start"
+  space-before-blocks: 2
+  arrow-parens:
+    - 2
+    - "always"
+  arrow-spacing:
+    - 2
+    - before: true
+      after: true
+  constructor-super: 2
+  no-var: 2
+  array-bracket-spacing:
+    - 2
+    - "never"
+  block-spacing:
+    - 2
+    - "always"
+  brace-style:
+    - 2
+    - "1tbs"
+    - allowSingleLine: true
+  camelcase:
+    - 2
+    - properties: "always"
+  jsx-quotes: [2, "prefer-single"]
+  no-console:
+    - 2
+  no-debugger:
+    - 2
+  no-underscore-dangle:
+    - 2
+  react/forbid-prop-types: 2
+  react/prop-types: 1
+env:
+  es6: true
+  node: true
+  browser: true
+  mocha: true
+  jquery: true
+  commonjs: true
+extends:
+  - 'eslint:recommended'
+  - 'plugin:react/recommended'
+ecmaFeatures:
+  jsx: true
+  experimentalObjectRestSpread: true
+plugins:
+  - react
