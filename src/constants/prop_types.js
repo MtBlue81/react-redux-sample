@@ -8,6 +8,7 @@ const {
   oneOfType,
   shape,
   string,
+  bool,
 } = PropTypes;
 
 // person
@@ -22,6 +23,7 @@ export const todo = shape({
   text: string,
   status: oneOf(TODO_STATUS).isRequired,
   owner: oneOfType([person, string]),
+  isCompleted: bool,
 });
 
 export default {
